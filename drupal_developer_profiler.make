@@ -3,11 +3,19 @@ api = 2
 
 
 ; contrib modules
+projects[admin] = 2.0-rc1
 projects[admin][subdir] = "contrib"
+
 projects[coder][subdir] = "contrib"
+
+projects[demo] = 1.3
 projects[demo][subdir] = "contrib"
+
+projects[devel] = 1.22
 projects[devel][subdir] = "contrib"
+
 projects[examples][subdir] = "contrib"
+
 projects[module_builder][subdir] = "contrib"
 
 ; contrib themes
