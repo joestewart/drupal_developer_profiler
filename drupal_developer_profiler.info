@@ -1,6 +1,6 @@
 name = Drupal Developer (Profiler)
 core = 6.x
-theme = scruffy3
+theme = scruffy
 
 
 ; -----------------------------------------------------------------------------
