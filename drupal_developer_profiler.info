@@ -1,0 +1,90 @@
+name = Drupal Developer (Profiler)
+core = 6.x
+theme = scruffy3
+
+
+; -----------------------------------------------------------------------------
+;                                  Modules
+; -----------------------------------------------------------------------------
+; List the modules (core, contrib and/or features) to be enabled in the
+; dependencies[] array. Any dependencies of the listed modules will be detected
+; and enabled automatically.
+; -----------------------------------------------------------------------------
+; Core
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = path
+dependencies[] = system
+dependencies[] = user
+
+; Contrib
+; dependencies[] = admin_menu
+; dependencies[] = date_api
+; dependencies[] = imageapi
+; dependencies[] = imageapi_gd
+; dependencies[] = imagecache
+; dependencies[] = imagecache_ui
+; dependencies[] = token
+; dependencies[] = globalredirect
+; dependencies[] = content
+; dependencies[] = fieldgroup
+; dependencies[] = filefield
+; dependencies[] = imagefield
+; dependencies[] = number
+; dependencies[] = optionwidgets
+; dependencies[] = text
+; dependencies[] = views
+; dependencies[] = views_ui
+; dependencies[] = views_export
+; dependencies[] = advanced_help
+; dependencies[] = features
+; dependencies[] = pathauto
+; dependencies[] = wysiwyg
+; dependencies[] = markdown
+; dependencies[] = transliteration
+
+dependencies[] = admin
+dependencies[] = coder
+dependencies[] = demo
+dependencies[] = devel
+dependencies[] = module_builder
+
+; -----------------------------------------------------------------------------
+;                                   Users
+; -----------------------------------------------------------------------------
+; One other thing to note here is that there's this (handy) quirk in Drupal's 
+; install API in that you can bypass the configuration form during installation
+; (where you'd normally set up user 1 credentials and the site name and such).
+; To do this you need to specify credentials for user 1 and also specify the
+; site name and site email variables (@see Variables below). 
+; -----------------------------------------------------------------------------
+
+; users[superduper][uid]    = 1
+; users[superduper][name]   = admin
+; users[superduper][mail]   = admin@admin
+; users[superduper][roles]  = Admin,Publisher
+; users[superduper][status] = 1
+
+; -----------------------------------------------------------------------------
+;                                  Variables
+; -----------------------------------------------------------------------------
+variables[site_name] = Drupal Developer
+variables[site_mail] = joe@joestewartjr.com
+variables[site_footer] = Drupal Developer
+variables[site_frontpage] = node/1
+variables[theme_settings][toggle_node_info_page] = 0
+
+; You may also want to set the clean url variable if you don't need clean urls. 
+; Since we bypassed the configuration screen, it is enabled by default, so to 
+; disable it you'll want to uncomment this line:
+; variables[clean_url] = 0
+
+; -----------------------------------------------------------------------------
+;                                    Nodes
+; -----------------------------------------------------------------------------
+nodes[front][type] = page
+nodes[front][title] = Isn't DD Profiler nifty?
+nodes[front][uid] = 1
+nodes[front][body] = Uniquely redefine adaptive ideas after leading-edge internal or "organic" sources. Appropriately harness effective customer service via timely best practices. Holisticly grow orthogonal human capital through high-payoff outsourcing.
